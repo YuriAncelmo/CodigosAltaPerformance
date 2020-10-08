@@ -6,11 +6,7 @@ namespace CodigosAltaPerformance
     class ListaEncadeadaSimples
     {
         public Node lista { get; set; }
-        public class Node
-        {
-            public int dado;
-            public Node prox;
-        }
+        
         /// <summary>
         /// Cria uma instancia de lista encadeada simples
         /// </summary>
@@ -39,13 +35,7 @@ namespace CodigosAltaPerformance
 
         public void MostrarDados()
         {
-            MostrarDados(lista);
-        }
-        private void MostrarDados(Node lista)
-        {
-            Node aux = lista;
-            Console.WriteLine("Dado" + aux.dado);
-            if(aux.prox != null) MostrarDados(aux.prox);
+            lista.MostrarDados(lista);
         }
         public void InserirElemento(int valor)
         {

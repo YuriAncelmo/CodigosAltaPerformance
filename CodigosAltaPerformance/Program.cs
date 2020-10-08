@@ -10,15 +10,33 @@ namespace CodigosAltaPerformance
     {
         static void Main(string[] args)
         {
-            ListaEncadeadaSimples simples = new ListaEncadeadaSimples(100);
-            simples.MostrarDados();
-            
-            simples.InserirElemento(8);
+            //ListaEncadeadaSimples simples = new ListaEncadeadaSimples(100);
+            //simples.MostrarDados();
 
-            Console.WriteLine("Lista depois da inserção ");
-            simples.MostrarDados();
+            //simples.InserirElemento(8);
+
+            //Console.WriteLine("Lista depois da inserção ");
+            //simples.MostrarDados();
+
+            //Console.ReadKey();
+
+            //Pilha teste = new Pilha();
+
+            //teste.Push(3);
+            //teste.Push(4);
             
-            Console.ReadKey();
+            //teste.MostrarDados();
+            
+            //teste.Push(1);
+            
+            //Console.WriteLine(teste.Top());
+            
+            //while (!teste.IsEmpty())
+            //{
+            //    Console.WriteLine(teste.Pop());
+            //}
+            
+            //Console.ReadKey();
         }
     }
 }
