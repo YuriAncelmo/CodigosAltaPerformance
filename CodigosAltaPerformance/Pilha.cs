@@ -43,7 +43,7 @@ namespace CodigosAltaPerformance
         }
         public void MostrarDados()
         {
-            if(!IsEmpty()) topo.MostrarDados(topo);
+            if(!IsEmpty()) topo.MostrarDados(topo, " ");
         }
     }
 }

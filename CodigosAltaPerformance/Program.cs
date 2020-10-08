@@ -24,19 +24,23 @@ namespace CodigosAltaPerformance
 
             //teste.Push(3);
             //teste.Push(4);
-            
+
             //teste.MostrarDados();
-            
+
             //teste.Push(1);
-            
+
             //Console.WriteLine(teste.Top());
-            
+
             //while (!teste.IsEmpty())
             //{
             //    Console.WriteLine(teste.Pop());
             //}
-            
+
             //Console.ReadKey();
+
+            //Exemplo de conversão para binário
+            ConversorBinario converter = new ConversorBinario(16);
+            converter.getBinario();
         }
     }
 }

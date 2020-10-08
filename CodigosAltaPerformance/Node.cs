@@ -10,14 +10,19 @@ namespace CodigosAltaPerformance
     {
         public int dado;
         public Node prox;
-        
-        public void MostrarDados(Node lista)
+        /// <summary>
+        /// Mostra os dados que estão dentro dos nós
+        /// </summary>
+        /// <param name="lista">Lista a ser exibida</param>
+        /// <param name="concatenate">Concatenação dos elementos da lista</param>
+        public void MostrarDados(Node lista, string concatenate)
         {
             Node aux = lista;
-            Console.WriteLine("Dado" + aux.dado);
+            Console.Write( aux.dado + concatenate);
 
             if (aux.prox != null)
-                MostrarDados(aux.prox);
+                MostrarDados(aux.prox, concatenate);
         }
+        
     }
 }

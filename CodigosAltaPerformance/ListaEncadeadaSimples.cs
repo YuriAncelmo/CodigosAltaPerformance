@@ -35,7 +35,7 @@ namespace CodigosAltaPerformance
 
         public void MostrarDados()
         {
-            lista.MostrarDados(lista);
+            lista.MostrarDados(lista," ");
         }
         public void InserirElemento(int valor)
         {

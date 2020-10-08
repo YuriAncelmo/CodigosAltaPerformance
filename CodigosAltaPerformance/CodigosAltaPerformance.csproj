@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConversorBinario.cs" />
     <Compile Include="ListaEncadeadaSimples.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Pilha.cs" />
