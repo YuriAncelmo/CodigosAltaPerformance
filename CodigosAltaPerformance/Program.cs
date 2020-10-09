@@ -39,7 +39,7 @@ namespace CodigosAltaPerformance
             //Console.ReadKey();
 
             //Exemplo de conversão para binário
-            ConversorBinario converter = new ConversorBinario(16);
+            ConversorBinario converter = new ConversorBinario(15);
             converter.getBinario();
         }
     }

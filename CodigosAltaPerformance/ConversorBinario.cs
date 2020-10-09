@@ -22,16 +22,21 @@ namespace CodigosAltaPerformance
         {
             Pilha pilha = new Pilha();
             int aux = numero;
-            do
+            //do
+            //{
+            //    pilha.Push(aux % 2);
+            //    aux = aux / 2;
+            //} while (aux / 2 != 0);
+
+            ////Caso par adiciona 1 
+            //if (numero % 2 == 0)
+            //    pilha.Push(1);
+            //Enquanto a divisão não chegar ao final (ex.: 1/2), continuar o laço
+            while (aux > 0)
             {
                 pilha.Push(aux % 2);
                 aux = aux / 2;
-            } while (aux / 2 != 0);
-
-            //Caso par adiciona 1 
-            if (numero % 2 == 0)
-                pilha.Push(1);
-
+            }
             Console.Write("O numero " + this.numero + " em binário é: ");
             // Desempilhar
             pilha.topo.MostrarDados(pilha.topo, "");

@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConversorBinario.cs" />
+    <Compile Include="Implementacao\FilaEncadeadaAbstract.cs" />
+    <Compile Include="Implementacao\FilaEncadeada.cs" />
+    <Compile Include="Interface\IFila.cs" />
     <Compile Include="ListaEncadeadaSimples.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Pilha.cs" />
@@ -53,5 +56,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
