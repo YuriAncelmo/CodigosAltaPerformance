@@ -7,39 +7,37 @@ using System.Threading.Tasks;
 
 namespace CodigosAltaPerformance.Implementacao
 {
-    abstract class FilaEncadeadaAbstract : IFila
+    public class FilaEncadeada : IFila
     {
         public Node inicio { get; set; }
         public Node fim { get; set; }
-        public FilaEncadeadaAbstract()
+        public FilaEncadeada()
         {
-            Init(this);
+            Init();
         }
-        public void Dequeue(IFila fila, Node node)
+        public Node Dequeue()
         {
-            FilaEncadeadaUtil.Dequeue(fila, node);
+            return FilaEncadeadaUtil.Dequeue(this);
         }
 
-        public void Enqueue(IFila fila, Node node)
+        public void Enqueue(Node node)
         {
             FilaEncadeadaUtil.Enqueue(this, node);
         }
 
-        public int First(IFila fila)
+        public int First()
         {
-           return FilaEncadeadaUtil.First(fila);
+           return FilaEncadeadaUtil.First(this);
         }
 
-        public void Init(IFila fila)
+        public void Init()
         {
             FilaEncadeadaUtil.Init(this);
         }
 
-        public bool IsEmpty(IFila fila)
+        public bool IsEmpty()
         {
-            return FilaEncadeadaUtil.IsEmpty(fila);
+            return FilaEncadeadaUtil.IsEmpty(this);
         }
-
-
     }
 }

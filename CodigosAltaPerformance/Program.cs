@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CodigosAltaPerformance.Implementacao;
+using CodigosAltaPerformance.Interface;
+using System;
+using System.Security.AccessControl;
 
 namespace CodigosAltaPerformance
 {
@@ -39,8 +38,16 @@ namespace CodigosAltaPerformance
             //Console.ReadKey();
 
             //Exemplo de conversão para binário
-            ConversorBinario converter = new ConversorBinario(15);
-            converter.getBinario();
+            //ConversorBinario converter = new ConversorBinario(15);
+            //converter.getBinario();
+            IFila fila = new FilaEncadeada();
+            //Empilhar 
+            Node novo = new Node();
+            novo.dado = 83;
+            fila.Enqueue(novo);
+            //Mostrar
+            Node retorno = fila.Dequeue();
+            Console.WriteLine(retorno.dado);
         }
     }
 }

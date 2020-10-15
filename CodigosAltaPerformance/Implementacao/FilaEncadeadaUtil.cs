@@ -10,13 +10,16 @@ namespace CodigosAltaPerformance.Implementacao
     class FilaEncadeadaUtil
     {
         
-        public static void Dequeue(IFila fila, Node node)
+        public static Node Dequeue(IFila fila)
         {
+            Node retorno = null;
             if (!IsEmpty(fila))
             {
+                retorno = fila.inicio;
                 //Retira o primeiro elemento
                 fila.inicio = fila.inicio.prox;
             }
+            return retorno;
         }
 
         public static void Enqueue(IFila fila, Node node)
